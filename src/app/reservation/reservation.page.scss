@@ -1,0 +1,43 @@
+.page-content{
+  margin:20px;
+  .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+      img{
+        width: 70px;
+        height: 30px;
+      }
+    }
+    ion-icon{
+      font-size:xx-large;
+      color:gray;
+    }
+  }
+
+  .select-dr{
+    ion-list{
+      border: solid#1c1c1d;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .provider-profile{
+        display: flex;
+        align-items: center;
+      }
+    }
+    ion-avatar{
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:#fff;
+    }
+
+  }
+
+}
+
