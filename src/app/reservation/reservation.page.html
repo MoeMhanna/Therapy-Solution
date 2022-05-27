@@ -10,7 +10,7 @@
       <ion-icon name="close-circle-outline"></ion-icon>
     </div>
 
-    <div class="select-provider">
+    <div class="select-provider" *ngIf="isModalClosed">
       <div class="dr-profile">
         <ion-avatar>DR</ion-avatar>
         <ion-label class="provider-info">
@@ -18,7 +18,21 @@
           <p>none</p>
         </ion-label>
       </div>
-        <ion-button>change</ion-button>
+        <ion-button (click)="openModal()"
+                    expand=block>change</ion-button>
+    </div>
+
+    <div class="select-provider" *ngIf="!isModalClosed">
+      <div class="dr-profile">
+        <ion-avatar></ion-avatar>
+        <ion-label class="provider-info">
+          <h3>Select a Provider</h3>
+          <p>none</p>
+        </ion-label>
+      </div>
+      <ion-button (click)="openModal()">
+        change
+      </ion-button>
     </div>
 
     <div class="select-location">

@@ -1,0 +1,10 @@
+ion-header{
+  height:10%;
+}
+ion-item{
+  display: flex;
+  ion-avatar{
+    background-color: gray;
+    margin-right: 10px;
+  }
+}

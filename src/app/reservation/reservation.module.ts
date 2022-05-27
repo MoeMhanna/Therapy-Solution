@@ -8,13 +8,15 @@ import { ReservationPageRoutingModule } from './reservation-routing.module';
 
 import { ReservationPage } from './reservation.page';
 import {ProviderComponent} from '../provider-modal/provider.component';
+import {IonBottomSheetModule} from 'ion-bottom-sheet';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReservationPageRoutingModule
+    ReservationPageRoutingModule,
+    IonBottomSheetModule
   ],
     declarations: [
       ReservationPage,
