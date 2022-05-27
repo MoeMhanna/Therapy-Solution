@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reservation.page.scss'],
 })
 export class ReservationPage implements OnInit {
-
-  constructor() { }
-
+  isModalOpen = true;
   ngOnInit() {
   }
 

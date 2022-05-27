@@ -2,6 +2,7 @@
 <ion-content>
 
   <div class="page-content">
+
     <div class="heading">
       <div class="logo">
         <img src="https://itmattersforlife.com/images/logo-itmatters.png">
@@ -9,8 +10,39 @@
       <ion-icon name="close-circle-outline"></ion-icon>
     </div>
 
-    
+      <div class="select-location">
+       <ion-label class="select-location-label">
+        Select Location
+       </ion-label>
+
+      <ion-radio-group value="biff">
+
+        <div class="location">
+          <ion-radio value="Carlstadt"></ion-radio>
+          <ion-label>Carlstadt</ion-label>
+        </div>
+
+        <div class="location">
+          <ion-radio value="Mahwah"></ion-radio>
+          <ion-label>Mahwah</ion-label>
+        </div>
+
+        <div class="location">
+          <ion-radio value="Red bank"></ion-radio>
+          <ion-label>Red bank</ion-label>
+        </div>
+
+      </ion-radio-group>
+      </div>
+
+    <div class="date-picker">
+      <ion-datetime locale="en-EN"
+                    displayFormat="MM/DD/YYYY"
+                    presentation="">
+      </ion-datetime>
+    </div>
 
   </div>
 
 </ion-content>
+
