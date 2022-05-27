@@ -20,6 +20,35 @@ ion-content{
         color: #fff;
       }
     }
+    .select-provider{
+      display: flex;
+      align-items: center;
+      margin:20px 0;
+      justify-content: space-between;
+      border:solid #fff ;
+      border-radius: 10px;
+      padding:5px;
+      .dr-profile{
+        display: flex;
+        align-items: center;
+        ion-avatar{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: gray;
+          width: 50px;
+          height: 50px;
+          margin-right:10px;
+        }
+        ion-label {
+          h3, p {
+            color: #fff;
+          }
+        }
+      }
+
+    }
+
     .select-location{
       margin:20px 0;
       .select-location-label{
