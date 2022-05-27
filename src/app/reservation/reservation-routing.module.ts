@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ReservationPage } from './reservation.page';
+import {SlotTimeComponent} from '../slot-time/slot-time.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule, SlotTimeComponent],
+  declarations: [
+    SlotTimeComponent
+  ]
 })
 export class ReservationPageRoutingModule {}
